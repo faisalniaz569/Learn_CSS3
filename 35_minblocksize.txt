@@ -1,0 +1,81 @@
+********************
+
+CHAPTER: 35
+
+********************
+
+** Min block size
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightblue;
+  border: solid black 1px;
+  width: 100px;
+  min-block-size: 200px;
+}
+</style>
+</head>
+<body>
+
+<h1>The min-block-size Property</h1>
+
+<div>min-block-size: 200px;</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1, #div2{
+  width: 40%;
+  border: solid black 3px;
+  float: left;
+  margin: 2px;
+}
+
+#div1{
+  min-block-size: 100px;
+}
+
+#div2{
+  block-size: 100px;
+}
+
+p.content{
+  margin: 0;
+  background-color: lightgreen;
+  height: 50px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {height: 150px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Min-block-size and block-size comparison</h1>
+
+<p>Content gradually changes size in the same way inside both boxes, but the effects from min-block-size and block-size are different. The box with min-block-size is able to grow in order to fit growing content:<p>
+
+<div id="div1">
+  <p class="content">Div element with min-block-size 100px;</p>
+</div>
+
+<div id="div2">
+  <p class="content">Div element with block-size 100px;</p>
+</div>
+
+</body>
+</html>
+

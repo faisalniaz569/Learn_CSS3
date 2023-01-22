@@ -1,0 +1,184 @@
+********************
+
+CHAPTER: 57
+
+********************
+
+** transition property:
+
+transition-property: none|all|property|initial|inherit;
+
+Here property is width/ any px,
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-property Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+</body>
+</html>
+
+** transition duration:
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 5s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-duration Property</h1>
+
+<p>Hover over the div element below, to see the transition effect (the transition effect will lasts for 5 seconds):</p>
+
+<div></div>
+
+</body>
+</html>
+
+transition-duration: time;
+
+** transition-timing-function
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+</body>
+</html>
+
+transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n);
+
+** transition-delay
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-delay: 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-delay Property</h1>
+
+<p>Hover over the div element below, to see the transition effect (Note that the transition effect will wait 2 seconds before starting):</p>
+
+<div></div>
+
+</body>
+</html>
+
+transition-delay: time;
+
+** transition
+
+transition: property duration timing-function delay|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Properties Specified One by One</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+
+
+
+
+

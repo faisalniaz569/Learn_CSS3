@@ -1,0 +1,179 @@
+********************
+
+CHAPTER: 47
+
+********************
+
+** rotate
+
+rotate: axis angle|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  rotate: 30deg;
+}
+</style>
+</head>
+<body>
+
+<h3>Rotate property</h3>
+<div>Hello</div>
+<br>
+<p>Rotates div element 30 degrees clockwise around z-axis.</p>
+<p>Try to change rotate value to -30 degrees and see what happens.</p>
+
+</body>
+</html>
+
+============================================================================================================
+
+Definition and use:
+
+The rotate property allows you to rotate elements.
+
+The rotate property defines a value for how much an element is rotated clockwise around z-axis. To rotate an element around x-axis or y-axis or in other ways, this must be defined.
+
+Values for rotate property can be given as one angle, axis name + angle, or three values + angle.
+
+If an angle is given, the element is rotated clockwise around z-axis.
+If axis name + angle is given, the element is rotated clockwise around that given axis.
+If three values are given + angle, the three values define a vector which the element is rotated around.
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  rotate: x 60deg;
+}
+</style>
+</head>
+<body>
+
+<h3>Rotate property</h3>
+<div>Hello</div>
+<br>
+<p>Rotates div element 30 degrees clockwise around z-axis.</p>
+<p>Try to change rotate value to -30 degrees and see what happens.</p>
+
+</body>
+</html>
+
+
+Example 3: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  padding: 10px;
+}
+#div1 {
+  position: relative;
+  margin: auto;
+  height: 150px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#div2 {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: red;
+  rotate: y -180deg;
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate property</h1>
+
+<div id="myDIV">
+  <div id="div1">DIV1
+    <div id="div2">DIV2</div>
+  </div>
+  <p>Try "1 1 0 60deg" as value for rotate. The first three values represent a vector for the element to rotate around.</p>
+</div>
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  padding: 10px;
+}
+#div1 {
+  position: relative;
+  margin: auto;
+  height: 150px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#div2 {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: red;
+  rotate: 1 1 1 60deg;
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate property</h1>
+
+<div id="myDIV">
+  <div id="div1">DIV1
+    <div id="div2">DIV2</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

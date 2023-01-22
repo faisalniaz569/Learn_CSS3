@@ -1,0 +1,65 @@
+********************
+
+CHAPTER: 25
+
+********************
+
+
+** image-rendering
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.image {
+  height: 100px;
+  width: 100px;  
+  image-rendering: auto;
+}
+
+.crisp-edges {
+  image-rendering: -webkit-optimize-contrast; /* Chrome, Edge, Opera, and Safari */
+  image-rendering: crisp-edges;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.smooth {
+  image-rendering: smooth;
+}
+
+.high-quality {
+  image-rendering: high-quality;
+}
+</style>
+</head>
+<body>
+
+<h1>The image-rendering Property</h1>
+
+<p>image-rendering: auto;</p>
+<img class="image" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: crisp-edges;</p>
+<img class="image crisp-edges" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: pixelated;</p>
+<img class="image pixelated" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: smooth;</p>
+<img class="image smooth" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: high-quality;</p>
+<img class="image high-quality" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>Original image: <img src="smiley.gif" alt="Smiley" width="32" height="32"></p>
+
+</body>
+</html>
+
+image-rendering: auto|smooth|high-quality|crisp-edges|pixelated|initial|inherit;
+

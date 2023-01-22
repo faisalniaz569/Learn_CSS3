@@ -1,0 +1,965 @@
+********************
+
+CHAPTER: 15
+
+********************
+
+## Border Radius
+
+** border-bottom-left-radius
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 2px solid red;
+  padding: 10px;
+  border-bottom-left-radius: 25px;
+}
+
+#example2 {
+  border: 2px solid red;
+  padding: 10px;
+  border-bottom-left-radius: 50px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>border-bottom-left-radius: 25px:</h2>
+<div id="example1">
+  <p>The border-bottom-left-radius property defines the radius of the bottom-left corner.</p>
+</div>
+
+<h2>border-bottom-left-radius: 50px 20px:</h2>
+<div id="example2">
+  <p>If two values are set; the first one is for the bottom border, the second one for the left border.</p>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-left-radius: 100px;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-left-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-left-radius: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-left-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-left-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-left-radius: 10%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-left-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 6:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-left-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-left-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 7:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-left-radius: 100%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-left-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 8:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 2px solid red;
+  background: url(img/paper.gif);
+  padding: 10px;
+  border-bottom-left-radius: 40%;
+}
+</style>
+</head>
+<body>
+
+<h2>border-bottom-left-radius: 40%:</h2>
+<div id="example1">
+  <p>Here, the border-bottom-left-radius property is set to 40%. Also notice that the background is clipped at the border.</p>
+</div>
+
+</body>
+</html>
+
+=======================================================================================================
+
+
+** border-bottom-right-radius
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 2px solid red;
+  padding: 10px;
+  border-bottom-right-radius: 25px;
+}
+
+#example2 {
+  border: 2px solid red;
+  padding: 10px;
+  border-bottom-right-radius: 50px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>border-bottom-right-radius: 25px:</h2>
+<div id="example1">
+  <p>The border-bottom-right-radius property defines the radius of the bottom-right corner.</p>
+</div>
+
+<h2>border-bottom-right-radius: 50px 20px:</h2>
+<div id="example2">
+  <p>If two values are set; the first one is for the bottom border, the second one for the right border.</p>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-right-radius: 100px;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-right-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-right-radius: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-right-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-right-radius: 10px 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-right-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-right-radius: 10%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-right-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 6:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-right-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-right-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 7:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #E7E9EB;
+}
+#myDIV {
+  width:100%;
+  height:300px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-bottom-right-radius: 100%;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-bottom-right-radius Property</h1>
+
+<div id="myDIV">
+A demonstration of a rounded corner.
+</div>
+
+</body>
+</html>
+
+
+Example 8:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 2px solid red;
+  background: url(img/paper.gif);
+  padding: 10px;
+  border-bottom-right-radius: 40%;
+}
+</style>
+</head>
+<body>
+
+<h2>border-bottom-right-radius: 40%:</h2>
+<div id="example1">
+  <p>Here, the border-bottom-right-radius property is set to 40%. Also notice that the background is clipped at the border.</p>
+</div>
+
+</body>
+</html>
+
+Same as, border-top-left-radius, border-top-right-radius, border-bottom-left-radius,
+border-bottom-right-radius
+
+=======================================================================================================
+
+
+** border-collapse
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+#table1 {
+  border-collapse: separate;
+}
+
+#table2 {
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>border-collapse: separate (default):</h2>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>border-collapse: collapse:</h2>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+#table1 {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+#table2 {
+  border-collapse: collapse;
+  border-spacing: 10px;  
+}
+</style>
+</head>
+<body>
+
+<h2>border-collapse: separate</h2>
+<p>When using "border-collapse: separate", the border-spacing property can be used to set the space between the cells:</p>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>border-collapse: collapse</h2>
+<p>When using "border-collapse: collapse", the border-spacing property has no effect:</p>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 3px solid red;
+}
+
+#table1 {
+  border-collapse: collapse;
+  border-color: blue;
+}
+
+#table2 {
+  border-collapse: separate;
+  border-color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2>border-collapse: collapse:</h2>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>border-collapse: separate:</h2>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+=======================================================================================================
+
+## border-image
+
+Border image contain 5 properties.
+
+. border-image-source
+. border-image-slice
+. border-image-width
+. border-image-outset
+. border-image-repeat
+
+
+Border image shorthand property
+
+border-image: source slice repeat|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  border: 15px solid transparent;
+  padding: 15px;
+  border-image-source:url('img/border.png');  
+  border-image-repeat: stretch;
+  border-image-slice: 30;
+  border-image-width: 10px;
+  border-image-outset: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>The border-image-outset Property</h1>
+
+<div id="myDIV">
+<p>A demonstration on how to set the border image.</p>
+<p>We used this image:<br>
+<img src="img/border.png">
+</p>
+</div>
+
+</body>
+</html>
+
+or,
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #E7E9EB;
+        }
+
+        #myDIV {
+            height: 300px;
+            background-color: #FFFFFF;
+            border: 15px solid transparent;
+            padding: 15px;
+           /* border-image-source: url('img/border.png');
+            border-image-repeat: stretch;
+            border-image-slice: 30;
+            border-image-width: 10px;
+            border-image-outset: 10px; */
+            border-image: url('img/border.png') 30 stretch; 
+            border-image-width: 10px;
+            border-image-outset: 10px; 
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>The border-image-outset Property</h1>
+
+    <div id="myDIV">
+        <p>A demonstration on how to set the border image.</p>
+        <p>We used this image:<br>
+            <img src="img/border.png">
+        </p>
+    </div>
+
+</body>
+
+</html>
+
+
+=======================================================================================================
+
+
+## border-radius
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#example2 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>border-radius: 25px:</h2>
+<div id="example1">
+  <p>The border-radius property defines the radius of the element's corners.</p>
+</div>
+
+<h2>border-radius: 50px 20px:</h2>
+<div id="example2">
+  <p>If two values are set; the first one is for the top-left and bottom-right corner, the second one for the top-right and bottom-left corner.</p>
+</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#rcorners {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<p>Add rounded corners for an element with a specified background color:</p>
+
+<div id="rcorners">Rounded corners!</div>
+
+</body>
+</html>
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#rcorners {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+</style>
+</head>
+<body>
+
+<p>Add rounded corners for an element with a border:</p>
+
+<div id="rcorners">Rounded corners!</div>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#rcorners {
+  border-radius: 25px;
+  background: url(img/paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+</style>
+</head>
+<body>
+
+<p>Add rounded corners for an element with a background image:</p>
+
+<div id="rcorners">Rounded corners!</div>
+
+</body>
+</html>
+
+
+=======================================================================================================
+
+
+## border-spacing
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+
+#table1 {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+#table2 {
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+}
+</style>
+</head>
+<body>
+
+<h2>border-spacing: 15px:</h2>
+<p>When using "border-collapse: separate", the border-spacing property can be used to set the space between the cells:</p>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>border-spacing: 15px 50px:</h2>
+<p>Using two values (the first sets the horizontal spacing and the second sets the vertical spacing):</p>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+

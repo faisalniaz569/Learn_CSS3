@@ -1,0 +1,1649 @@
+********************
+
+CHAPTER: 50
+
+********************
+
+** scroll-padding-top
+
+scroll-padding-top: auto|value|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 3/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-top property.</h3>
+<p>Scroll-padding-top property is set on the container, so that the snap position of child elements is offset by a distance to the top of the container.</p>
+<p>In this case, snap position is set to start in y direction, so the element in focus should snap into place at the very top of the container. But instead, because of the scroll-padding-top value, the element in focus is offset by a 20px distance from the top of the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+** Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 2/3;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#topDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-top: 40px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 30px;
+}
+      
+#imgDiv > img {
+  width: 95%;
+  margin: 2px;
+  scroll-snap-align: start none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-top property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position start and scroll-padding-top 30px. The effect of the scroll-padding-top property value is that the images are offset below the fixed top element.</p>
+
+<div id="container">
+  <div id="topDiv">Fixed top element</div>
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+</div>
+
+</body>
+</html>
+
+** Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: both mandatory;
+  width: 50%;
+  aspect-ratio: 1/1;
+  margin: 30px auto;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: solid black 2px;
+  scroll-padding-top: 30px;
+}
+
+#container > div {
+  display: inline-block;
+  height: 85%;
+  border-radius: 5%;
+  aspect-ratio: 1/1;
+  scroll-snap-align: start;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-top property, with snap in both directions.</h3>
+<p>Scroll towards the middle of the container, stop scrolling, and see how the scroll-padding-top property creates a 30px distance from the top of the container to the element.</p>
+
+<div id="container">
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="grey"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="grey"></div>
+</div>
+
+</body>
+</html>
+
+================================================================================================================
+
+** scroll-padding-right
+
+scroll-padding-right: auto|value|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding-right: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 3/2;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 80%;
+  aspect-ratio: 4/3;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 2px;
+  scroll-snap-align: end;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-right property.</h3>
+<p>Scroll-padding-right property is set on the container, so that the snap position of child elements is offset by a distance to the right of the container.</p>
+<p>In this case, snap position is set to end in x direction, so the element in focus should snap into place at the very right of the container. But instead, because of the scroll-padding-right value, the element in focus is offset by a 20px distance from the right side of the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#leftDiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-right: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-padding-right: 30px;
+}
+      
+#imgDiv > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none end;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-right property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position end and scroll-padding-right 30px. The effect of the scroll-padding-right property value is that the images comes out from behind the fixed element on the right.</p>
+
+<div id="container">
+  <div id="leftDiv">Fixed</div>
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+</div>
+
+</body>
+</html>
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: both mandatory;
+  width: 50%;
+  aspect-ratio: 1/1;
+  margin: 30px auto;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: solid black 2px;
+  scroll-padding-right: 30px;
+}
+
+#container > div {
+  display: inline-block;
+  height: 95%;
+  border-radius: 5%;
+  aspect-ratio: 1/1;
+  scroll-snap-align: end;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-right property, with snap in both directions.</h3>
+<p>Scroll towards the middle of the container, stop scrolling, and see how the scroll-padding-right property creates a 30px distance from the right side of the container to the element.</p>
+
+<div id="container">
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="grey"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="grey"></div>
+</div>
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 50%;
+  aspect-ratio: 1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  direction: rtl;
+  scroll-padding-right: 30px;
+}
+      
+#container > div {
+  display: inline-block;
+  margin: 2px;
+  scroll-snap-align: none end;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 95%;
+  aspect-ratio: 2/3;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 80%;
+  aspect-ratio: 3/4;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-right with altered snap position.</h3>
+<p>Snap position must be placed on right of the child elements for scroll-padding-right to work. On pages written in English the snap position can normally be set on right side of child elements by setting scroll-snap-align to "none end" because inline direction is left to right. But, if we change the inline direction with the direction property value set to "rtl", the snap position changes from the right side to left side of the child elements. With the code like this the scroll-padding-right property no longer works.</p>
+
+<div id="container">
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+</div>
+
+
+</body>
+</html>
+
+
+================================================================================================================
+
+** scroll-padding-bottom
+
+scroll-padding-bottom: auto|value|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 3/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: end;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-bottom property.</h3>
+<p>Scroll-padding-bottom property is set on the container, so that the snap position of child elements is offset by a distance to the bottom of the container.</p>
+<p>In this case, snap position is set to end in y direction, so the element in focus should snap into place at the very end of the container. But instead, because of the scroll-padding-bottom value, the element in focus is offset by a 20px distance from the bottom of the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+Exaample 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 2/3;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#topDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 30px;
+}
+      
+#imgDiv > img {
+  width: 95%;
+  margin: 2px;
+  scroll-snap-align: end none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-bottom property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position end and scroll-padding-bottom 30px. The effect of the scroll-padding-bottom property value is that the images are offset above the fixed top element.</p>
+
+<div id="container">
+  <div id="topDiv">Fixed bottom element</div>
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+</div>
+
+</body>
+</html>
+
+example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: both mandatory;
+  width: 50%;
+  aspect-ratio: 1/1;
+  margin: 30px auto;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: solid black 2px;
+  scroll-padding-bottom: 30px;
+}
+
+#container > div {
+  display: inline-block;
+  height: 95%;
+  border-radius: 5%;
+  aspect-ratio: 1/1;
+  scroll-snap-align: end;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-bottom property, with snap in both directions.</h3>
+<p>Scroll towards the middle of the container, stop scrolling, and see how the scroll-padding-bottom property creates a 30px distance from the bottom of the container to the element.</p>
+
+<div id="container">
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="grey"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="grey"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 4:
+
+Snap-position
+==============
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 50%;
+  aspect-ratio: 1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  writing-mode: vertical-rl;
+  scroll-padding-bottom: 30px;
+}
+      
+#container > div {
+  margin: 2px;
+  scroll-snap-align: end none;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 95%;
+  aspect-ratio: 2/3;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 80%;
+  aspect-ratio: 1/2;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-bottom with altered snap position.</h3>
+<p>Snap position must be placed on bottom of the child elements for scroll-padding-bottom to work. On pages written in English the snap position can normally be set on bottom of child elements by setting scroll-snap-align to "end none" because block direction is downwards. But, if we change block direction with the writing-mode property value set to "vertical-rl", the snap position changes from bottom to left side of the child elements. With the code like this the scroll-padding-bottom property no longer works.</p>
+
+<div id="container">
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="green">Green</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+================================================================================================================
+
+** scroll-padding-left
+
+scroll-margin-left: auto|value|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 3/2;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 80%;
+  aspect-ratio: 4/3;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 2px;
+  scroll-snap-align: start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-left property.</h3>
+<p>Scroll-padding-left property is set on the container, so that the snap position of child elements is offset by a distance to the left of the container.</p>
+<p>In this case, snap position is set to start in x direction, so the element in focus should snap into place at the very left of the container. But instead, because of the scroll-padding-left value, the element in focus is offset by a 20px distance from the left side of the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#leftDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-left: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-padding-left: 30px;
+}
+      
+#imgDiv > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-left property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position start and scroll-padding-left 30px. The effect of the scroll-padding-left property value is that the images comes out from behind the fixed element on the left.</p>
+
+<div id="container">
+  <div id="leftDiv">Fixed</div>
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+</div>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: both mandatory;
+  width: 50%;
+  aspect-ratio: 1/1;
+  margin: 30px auto;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: solid black 2px;
+  scroll-padding-left: 30px;
+}
+
+#container > div {
+  display: inline-block;
+  height: 95%;
+  border-radius: 5%;
+  aspect-ratio: 1/1;
+  scroll-snap-align: start;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-left property, with snap in both directions.</h3>
+<p>Scroll towards the middle of the container, stop scrolling, and see how the scroll-padding-left property creates a 30px distance from the left side of the container to the element.</p>
+
+<div id="container">
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="grey"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="grey"></div>
+</div>
+
+</body>
+</html>
+
+================================================================================================================
+
+** scroll-padding-block
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 3/1;
+  padding: 40px 0;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-block: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: start none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-block property.</h3>
+<p>Scroll-padding-block property is set on the container element, so that snap position is offset by a padding from the container in the block direction.</p>
+<p>In this case, snap position is set to start in block direction, so the element in focus should snap into place at the very top of the container. But instead, because of the scroll-padding-block value, the element in focus is offset by 20px distance from the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+** scroll-padding-block-end
+
+scroll-padding-block-end: auto|value|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-block-end: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: end none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-block-end property.</h3>
+<p>Scroll-padding-block-end property is set on the container element, so that snap position on child elements is offset by a distance from the end of the container in the block direction.</p>
+<p>In this case, snap position is set to end in block direction, so the element in focus should snap into place at the very bottom of the container. But instead, because of the scroll-padding-block-end value, the element in focus is offset by 20px distance from the end of the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 2/3;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#bottomDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-block-end: 30px;
+}
+      
+#imgDiv > img {
+  width: 95%;
+  margin: 2px;
+  scroll-snap-align: end none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-block-end property.</h3>
+<p>Drag the scrollbar vertically inside the photo gallery box, let go, and see the scroll-snap effect with snap position at the end of child elements in block direction, and scroll-padding-block-end set to 30px on the container. The effect of the scroll-padding-block-end property value is that the images are offset above the fixed bottom element.</p>
+
+<div id="container">
+  <div id="imgDiv">
+    <img src="img_chania.jpg" alt="alley">
+    <img src="img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img_mountains.jpg" alt="mountains">
+    <img src="img_man_narrow.jpg" alt="man with camera">
+    <img src="img_5terre.jpg" alt="Cinque Terre">
+  </div>
+  <div id="bottomDiv">Fixed bottom element</div>
+</div>
+
+</body>
+</html>
+
+================================================================================================================
+
+** scroll-padding-block-start
+
+scroll-padding-block-start: auto|value|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 3/1;
+  padding: 40px 0;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-block-start: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: start none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-block-start property.</h3>
+<p>Scroll-padding-block-start property is set on the container element, so that snap position is offset by a padding from the start of the container in the block direction.</p>
+<p>In this case, snap position is set to start in block direction, so the element in focus should snap into place at the very top of the container. But instead, because of the scroll-padding-block-start value, the element in focus is offset by 20px distance from the start of the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+================================================================================================================
+
+** scroll-padding-inline
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 60%;
+  aspect-ratio: 3/2;
+  padding: 0 40px;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 5/3;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 80%;
+  aspect-ratio: 5/4;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 2px;
+  scroll-snap-align: none start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-inline property.</h3>
+<p>Scroll-padding-inline property is set on the container element, so that snap position is offset by a padding from the container in the inline direction.</p>
+<p>In this case, snap position is set to start in inline direction, so the element in focus should snap into place at the very left of the container. But instead, because of the scroll-padding-inline value, the element in focus is offset by 20px distance from the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#leftDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-left: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-padding-inline: 30px 0;
+}
+      
+#imgDiv > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-inline property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position start in the inline direction for the child elements and scroll-padding-inline 30px at the start for the container. The effect of the scroll-padding-inline property value is that the images come out from behind the fixed element on the left.</p>
+
+<div id="container">
+  <div id="leftDiv">Fixed</div>
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+</div>
+
+</body>
+</html>
+
+================================================================================================================
+
+** scroll-padding-inline-end
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 60%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline-end: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 5/3;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 80%;
+  aspect-ratio: 5/4;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 2px;
+  scroll-snap-align: none end;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-inline-end property.</h3>
+<p>Scroll-padding-inline-end property is set on the container element, so that snap position on child elements is offset by a distance from the end of the container in the inline direction.</p>
+<p>In this case, snap position is set to end in the inline direction, so the element in focus should snap into place at the very right of the container. But instead, because of the scroll-padding-inline-end value, the element in focus is offset by 20px distance from the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#rightDiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-right: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-padding-inline-end: 30px;
+}
+      
+#imgDiv > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none end;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-inline-end property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position end in the inline direction for the child elements and scroll-padding-inline-end 30px for the container. The effect of the scroll-padding-inline-end property value is that the images come out from behind the fixed element on the right.</p>
+
+<div id="container">
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+  <div id="rightDiv">Fixed</div>
+</div>
+
+</body>
+</html>
+
+
+================================================================================================================
+
+**  scroll-padding-inline-start
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 60%;
+  aspect-ratio: 3/2;
+  padding: 0 40px;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline-start: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 5/3;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 80%;
+  aspect-ratio: 5/4;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 2px;
+  scroll-snap-align: none start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-inline-start property.</h3>
+<p>Scroll-padding-inline-start property is set on the container element, so that snap position on child elements is offset by a distance from the start of the container in the inline direction.</p>
+<p>In this case, snap position is set to start in the inline direction, so the element in focus should snap into place at the very left of the container. But instead, because of the scroll-padding-inline-start value, the element in focus is offset by 20px distance from the container to the child element.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 3/2;
+  margin: auto;
+  border: solid black 2px;
+}
+
+#leftDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#imgDiv {
+  position: absolute;
+  inset: 0 0 0 0;
+  padding-left: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  scroll-padding-inline-start: 30px;
+}
+      
+#imgDiv > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding-inline-start property.</h3>
+<p>Scroll inside the photo gallery box, stop scrolling, and see the scroll-snap effect with snap position start in the inline direction for the child elements and scroll-padding-inline-start 30px for the container. The effect of the scroll-padding-inline-start property value is that the images come out from behind the fixed element on the left.</p>
+
+<div id="container">
+  <div id="leftDiv">Fixed</div>
+  <div id="imgDiv">
+    <img src="img/img_chania.jpg" alt="alley">
+    <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+    <img src="img/img_mountains.jpg" alt="mountains">
+    <img src="img/img_man_narrow.jpg" alt="man with camera">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre">
+  </div>
+</div>
+
+</body>
+</html>
+
+
+==================================================================================================================
+
+** scroll-padding
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 3/1;
+  padding: 40px 0;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 20px;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: start;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-padding property.</h3>
+<p>Scroll-padding property is set on the container, so that the snap position of child elements is offset by a distance from the container.</p>
+<p>In this case, snap position is set to start in y direction, so the element in focus should snap into place at the very top of the container. But instead, because of the scroll-padding value, the element in focus is offset by 20px padding from the container.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

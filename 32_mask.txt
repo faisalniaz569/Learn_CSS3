@@ -1,0 +1,448 @@
+********************
+
+CHAPTER: 32
+
+********************
+
+** Mask image
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.mask2 {
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+.mask3 {
+  -webkit-mask-image: radial-gradient(black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(black 50%, rgba(0, 0, 0, 0.5));
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An image with a mask layer (from top to bottom):</h3>
+<div class="mask1">
+<img src="img\img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>An image with a mask layer (a circle):</h3>
+<div class="mask2">
+<img src="img\img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>An image with a mask layer (an ellipse):</h3>
+<div class="mask3">
+<img src="img\img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img\img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An image with a mask layer image:</h3>
+<div class="mask1">
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An image with a mask layer (an SVG image):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask1">
+    <polygon fill="#ffffff" points="100,10 40,198 190,78 10,78 160,198"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An image with a mask layer (an SVG image):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask1">
+    <circle fill="#ffffff" cx="75" cy="75" r="75"></circle>
+    <circle fill="#ffffff" cx="80" cy="260" r="75"></circle>
+    <circle fill="#ffffff" cx="270" cy="160" r="75"></circle>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" mask="url(#svgmask1)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+===========================================================================================================
+
+** mask-mode
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-mode: luminance;
+}
+
+.mask2 {
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-mode: alpha;
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-mode Property</h1>
+
+<p><strong>Note:</strong> The mask-mode property only works in Firefox!</p>
+
+<h3>Let the mask layer image be treated as a luminance mask:</h3>
+<div class="mask1">
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Let the mask layer image be treated as an alpha mask:</h3>
+<div class="mask2">
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+mask-mode: match-source|luminance|alpha|initial|inherit;
+
+
+===========================================================================================================
+
+** mask-origin
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  width: 600px;
+  height: 400px;
+  background: green;
+  border: 20px solid red;
+  padding: 50px;
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 80%;
+  mask-size: 80%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  -webkit-mask-origin: border-box;
+  mask-origin: border-box;  
+}
+
+.mask2 {
+  width: 600px;
+  height: 400px;
+  background: green;
+  border: 20px solid red;
+  padding: 50px;
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 80%;
+  mask-size: 80%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  -webkit-mask-origin: content-box;
+  mask-origin: content-box;  
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-origin Property</h1>
+
+<h3>Set mask-origin: border-box:</h3>
+<div class="mask1">
+  <img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Set mask-origin: content-box:</h3>
+<div class="mask2">
+  <img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask3 {
+  width: 600px;
+  height: 400px;
+  background: green;
+  border: 20px solid red;
+  padding: 50px;
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  -webkit-mask-origin: padding-box;
+  mask-origin: padding-box;  
+}
+
+.mask4 {
+  width: 600px;
+  height: 400px;
+  background: green;
+  border: 20px solid red;
+  padding: 50px;
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  -webkit-mask-origin: margin-box;
+  mask-origin: margin-box;  
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-origin Property</h1>
+
+<h3>Set mask-origin: padding-box:</h3>
+<div class="mask3">
+  <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Set mask-origin: margin-box:</h3>
+<div class="mask4">
+  <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+mask-origin: border-box|content-box|padding-box|margin-box|fill-box|stroke-box|view-box|initial|inherit;
+
+===========================================================================================================
+
+** mask-position
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 50%;
+  mask-size: 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;    
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-position Property</h1>
+
+<h3>Set the position of the mask layer image to center:</h3>
+<div class="mask1">
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+==>
+
+The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%
+
+
+===========================================================================================================
+
+** mask-repeat
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-size: 50%;
+  mask-size: 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+
+.mask2 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-size: 50%;
+  mask-size: 50%;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;    
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-repeat Property</h1>
+
+<h3>Set mask-repeat: no-repeat:</h3>
+<div class="mask1">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Set mask-repeat: repeat:</h3>
+<div class="mask2">
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+mask-repeat: repeat|repeat-x|repeat-y|space|round|no-repeat|initial|inherit;
+
+===========================================================================================================
+
+** mask-size
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(./img/w3logo.png);
+  mask-image: url(./img/w3logo.png);
+  -webkit-mask-size: 200px 200px;
+  mask-size: 200px 200px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-size Property</h1>
+
+<h3>Set the size of the mask layer image to 200px 200px:</h3>
+<div class="mask1">
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="img/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+
+
+
+

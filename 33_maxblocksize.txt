@@ -1,0 +1,86 @@
+********************
+
+CHAPTER: 33
+
+********************
+
+** Max block size
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightblue;
+  border: solid black 1px;
+  max-block-size: 60px;
+}
+</style>
+</head>
+<body>
+
+<h1>The max-block-size Property</h1>
+
+<div>
+  <p>max-block-size: 60px;</p>
+  <p>Text to try to expand the box</p>
+  <p>Text to try to expand the box</p>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1, #div2{
+  width: 40%;
+  border: solid black 3px;
+  float: left;
+  margin: 2px;
+}
+
+#div1{
+  max-block-size: 100px;
+}
+
+#div2{
+  block-size: 100px;
+}
+
+p.content{
+  margin: 0;
+  background-color: lightgreen;
+  height: 50px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {height: 150px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Max-block-size and block-size comparison</h1>
+
+<p>Content gradually changes size in the same way inside both boxes, but the effects from max-block-size and block-size are different. The box with max-block-size is able to shrink along with its shrinking content:<p>
+
+<div id="div1">
+  <p class="content">Div element with max-block-size 100px;</p>
+</div>
+
+<div id="div2">
+  <p class="content">Div element with block-size 100px;</p>
+</div>
+
+</body>
+</html>
+
+

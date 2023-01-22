@@ -1,0 +1,155 @@
+********************
+
+CHAPTER: 54
+
+********************
+
+** text-decoration-color
+
+text-decoration-color: color;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>The text-decoration-color Property</h1>
+
+<p>The color of the underline should now be red!</p>
+
+<p><strong>Note:</strong> The text-decoration-color property is not supported in Edge prior 79.</p>
+
+</body>
+</html>
+
+====================================================================================================================
+
+** text-decoration-line
+
+text-decoration-line: none|underline|overline|line-through|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+   -webkit-text-decoration-line: overline; /* Safari */
+   text-decoration-line: overline; 
+}
+
+div.b {
+   -webkit-text-decoration-line: underline; /* Safari */
+   text-decoration-line: underline; 
+}
+
+div.c {
+   -webkit-text-decoration-line: line-through; /* Safari */
+   text-decoration-line: line-through; 
+}
+
+div.d {
+   -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+}
+</style>
+</head>
+<body>
+
+<h1>The text-decoration-line Property</h1>
+
+<div class="a">This is some text with a line on top.</div>
+<br>
+
+<div class="b">This is some text with an underline.</div>
+<br>
+
+<div class="c">This is some text with a line-through.</div>
+<br>
+
+<div class="d">This is some text with an overline and an underline.</div>
+
+<p><b>Note:</b> The text-decoration-line property is not supported in Edge prior 
+79, and only with a -webkit- prefix in Safari.</p>
+
+</body>
+</html>
+
+====================================================================================================================
+
+** text-decoration-style
+
+text-decoration-style: solid|double|dotted|dashed|wavy|initial|inherit;
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+div.b {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+div.c {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+div.d {
+  text-decoration-line: overline underline;
+  text-decoration-style: wavy;
+}
+</style>
+</head>
+<body>
+
+<h1>The text-decoration-style Property</h1>
+
+<div class="a">This is some text with a solid underline.</div>
+<br>
+
+<div class="b">This is some text with a wavy underline.</div>
+<br>
+
+<div class="c">This is some text with a double underline.</div>
+<br>
+
+<div class="d">This is some text with a wavy over- and underline.</div>
+
+<p><b>Note:</b> The text-decoration-line property is not supported in Edge prior 
+79.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,374 @@
+********************
+
+CHAPTER: 43
+
+********************
+
+
+** Paint order
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+circle {
+  paint-order: stroke fill;
+}
+</style>
+</head>
+<body>
+
+<h1>paint-order: stroke fill</h1>
+
+<p>Default is to paint the circle with fill first, then stroke. Here, the order is reveresed, and so the outcome is different:</p>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="10" fill="yellow" />
+</svg>
+
+<p><strong>Tip:</strong> Try to reverse the order of fill and stroke, or remove paint-order property entirely and paint-order becomes the default order.</p>
+
+</body>
+</html>
+
+=============================================================================================================
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: normal;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: stroke;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: stroke markers;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: fill markers stroke;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: stroke markers fill;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+Example 6:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: stroke fill markers;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+Example 7:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: markers stroke fill;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+Example 8:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#star {
+  fill: lime;
+  fill-rule: evenodd;
+  stroke: purple;
+  stroke-width: 8px;
+  paint-order: markers fill stroke;
+} 
+</style>
+</head>
+<body>
+
+<h1>The paint-order Property</h1>
+
+<p>Normal paint order is fill, stroke, markers.</p>
+
+<svg width="250" height="250">
+  <marker
+    id="dot"
+    viewBox="0 0 10 10"
+    refX="5"
+    refY="5"
+    markerWidth="5"
+    markerHeight="5">
+    <circle cx="5" cy="5" r="5" fill="red" />
+  </marker>
+  <polygon 
+    id="star" 
+    points="120,30 60,218 210,98 30,98 180,218"
+    marker-mid="url(#dot)"
+    marker-end="url(#dot)"/>
+</svg>
+
+</body>
+</html>
+
+
+

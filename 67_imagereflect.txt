@@ -1,0 +1,145 @@
+********************
+
+CHAPTER: 67
+
+********************
+
+In this chapter you will learn how to reflect an image.
+
+The box-reflect property is used to create an image reflection.
+
+The value of the box-reflect property can be: below, above, left , or right.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  -webkit-box-reflect: below;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Image Reflection</h1>
+
+<p>Show the reflection below the image:</p>
+<img src="img/img_tree.png">
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  -webkit-box-reflect: right;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Image Reflection</h1>
+
+<p>Show the reflection to the right of the image:</p>
+<img src="img/img_tree.png">
+
+</body>
+</html>
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  -webkit-box-reflect: above;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Image Reflection</h1>
+
+<p>Show the reflection to the right of the image:</p>
+<img src="img/img_tree.png">
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    -webkit-box-reflect: left;
+    float: left;
+    margin-left: 50%;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Image Reflection</h1>
+
+<p>Show the reflection to the right of the image:</p>
+<img src="img/img_tree.png">
+
+</body>
+</html>
+
+
+## CSS Reflection Offset
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  -webkit-box-reflect: below 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Image Reflection</h1>
+
+<p>Show the reflection below the image, with a 20 pixels offset:</p>
+<img src="img/img_tree.png">
+
+</body>
+</html>
+
+
+## Reflection with Gradient
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Image Reflection</h1>
+
+<p>Show the reflection with gradient (to make a fade-out effect):</p>
+<img src="img/img_tree.png">
+
+</body>
+</html>

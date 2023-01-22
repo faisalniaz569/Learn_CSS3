@@ -1,0 +1,526 @@
+********************
+
+CHAPTER: 11
+
+********************
+
+** Animation
+-------------
+
+Definition and Usage
+The animation property is a shorthand property for:
+
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state
+
+Note: Always specify the animation-duration property, otherwise the duration is 0, and will never be played.
+
+
+
+
+# Animation-name
+
+The animation-name property specifies a name for the @keyframes animation.
+
+animation-name: keyframename|none|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation Property</h1>
+
+<p>Move an element from 0px to 200px left. The animation lasts for 5 seconds. It then starts over again, and go on forever (infinite).</p>
+<div></div>
+
+</body>
+</html>
+
+
+
+# animation-duration
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove infinite;
+  animation-duration: 3s;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-duration Property</h1>
+
+<p>Specify that the animation should complete one cycle in 3 seconds:</p>
+
+<div></div>
+
+<p><strong>Note:</strong> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+</body>
+</html>
+
+
+# animation-timing-function
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-timing-function Property</h1>
+
+<p>Play an animation with the same speed from beginning to end:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-timing-function Property</h1>
+
+<p>Play an animation with the same speed from beginning to end:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-timing-function Property</h1>
+
+<p>Play an animation with the same speed from beginning to end:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-timing-function Property</h1>
+
+<p>Play an animation with the same speed from beginning to end:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-timing-function Property</h1>
+
+<p>Play an animation with the same speed from beginning to end:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+# Animation-delay
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-delay Property</h1>
+
+<p>Start the animation after 2 seconds:</p>
+<div></div>
+
+</body>
+</html>
+
+
+# animation-iteration-count
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-iteration-count Property</h1>
+
+<p>Play the animation two times:</p>
+
+<div></div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-iteration-count Property</h1>
+
+<p>Play the animation forever:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+# animation-direction
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>animation-direction: alternate</h1>
+
+<p>Play the animation forwards first, then backwards:</p>
+<div></div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: normal;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>animation-direction: alternate</h1>
+
+<p>Play the animation forwards first, then backwards:</p>
+<div></div>
+
+</body>
+</html>
+
+
+# animation-fill-mode
+
+animation-fill-mode: none|forwards|backwards|both|initial|inherit;
+
+
+Example: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+<h1>animation-fill-mode: forwards</h1>
+
+<p>Let the div element retain the style values from the last keyframe when the animation ends:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+# animation-play-state
+
+animation-play-state: paused|running|initial|inherit;
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s;
+  animation-play-state: running;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-play-state Property</h1>
+
+<p>Pause an animation:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+
+## Animation Shorthand property
+
+Animation: name duration timing-function delay Iteration-count Fill mode;
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+********************
+
+CHAPTER: 46
+
+********************
+
+** resize
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: horizontal;
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<div>
+<p>Let the user resize only the width of this div element.</p>
+<p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: vertical;
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<div>
+  <p>Let the user resize only the height of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+</body>
+</html>
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<div>
+  <p>Let the user resize both the height and the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+</body>
+</html>
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: vertical;
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<div>
+  <p>Let the user resize only the height of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+</body>
+</html>
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+textarea#test {
+  resize: none;
+}
+</style>
+</head>
+<body>
+
+<h1>The resize Property</h1>
+
+<p>In many browsers, textarea elements are resizable by default. In this example, we have used the resize property to disable the resizability:</p>
+
+<textarea id="test">Textarea - Not resizable</textarea>
+<br><br>
+
+<textarea>Textarea - Resizable (default)</textarea>
+
+</body>
+</html>
+
+
+

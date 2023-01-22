@@ -1,0 +1,203 @@
+********************
+
+CHAPTER: 42
+
+********************
+
+
+** padding-block
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 1px solid black;
+  background-color: rgb(218, 246, 255);
+}
+
+p.ex1 {
+  padding-block: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-block Property</h1>
+
+<p class="ex1">This paragraph has a padding of 35 pixels on both sides in the block direction.</p>
+
+<p>This paragraph has no specified padding.</p>
+
+</body>
+</html>
+
+padding-block: auto|value|initial|inherit;
+
+=============================================================================================================
+
+** padding-block-end
+
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 1px solid black;
+  background-color: rgb(218, 246, 255);
+}
+
+p.ex1 {
+  padding-block-end: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-block-end Property</h1>
+
+<p class="ex1">This paragraph has a padding of 35 pixels at the end in the block direction.</p>
+
+<p>This paragraph has no specified padding.</p>
+
+</body>
+</html>
+
+=============================================================================================================
+
+** padding-block-start
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 1px solid black;
+  background-color: rgb(218, 246, 255);
+}
+
+p.ex1 {
+  padding-block-start: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-block-start Property</h1>
+
+<p class="ex1">This paragraph has a padding of 35 pixels at the start in the block direction.</p>
+
+<p>This paragraph has no specified padding.</p>
+
+</body>
+</html>
+
+
+=============================================================================================================
+
+** padding-inline
+
+Exaample:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+div.ex1 {
+  margin-bottom: 20px;
+  padding-inline: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-inline Property</h1>
+
+<div class="ex1">This div element has a padding of 50 pixels at the start and end in the inline direction.</div>
+
+<div>This div element has no specified padding.</div>
+
+</body>
+</html>
+
+=============================================================================================================
+
+** padding-inline-end
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+div.ex1 {
+  margin-bottom: 20px;
+  padding-inline-end: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-inline-end Property</h1>
+
+<div class="ex1">This div element has a padding of 50 pixels at the end in the inline direction.</div>
+
+<div>This div element has no specified padding.</div>
+
+</body>
+</html>
+
+=============================================================================================================
+
+** padding-inline-start
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+div.ex1 {
+  margin-bottom: 20px;
+  padding-inline-start: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>The padding-inline-start Property</h1>
+
+<div class="ex1">This div element has a padding of 50 pixels at the start in the inline direction.</div>
+
+<div>This div element has no specified padding.</div>
+
+</body>
+</html>
+
+
+

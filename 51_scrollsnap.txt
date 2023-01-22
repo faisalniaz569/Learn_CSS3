@@ -1,0 +1,388 @@
+********************
+
+CHAPTER: 51
+
+********************
+
+** scroll-snap-align
+
+scroll-snap-align: none|start|end|center|block inline|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 1/2;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 50%;
+  aspect-ratio: 2/1;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 5px;
+  scroll-snap-align: center;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-snap-align property.</h3>
+<p>Scroll-snap-align property is set on scrollable child elements inside the container, to snap on center position.</p>
+<p>Drag the scrollbar horizontally inside the container box, let go, and see the scroll-snap-align center effect.</p>
+<p>Click on a box, then navigate through the blue and green boxes with the left and right arrow keys.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+      
+#container > img {
+  height: 95%;
+  margin: 2px;
+  scroll-snap-align: none center;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-snap-align property.</h3>
+<p>Drag the scrollbar horizontally inside the photo gallery box, let go, and see the scroll-snap effect that makes the images snap into center.</p>
+
+<div id="container">
+  <img src="img/img_chania.jpg" alt="alley">
+  <img src="img/img_forest_narrow.jpg" alt="bridge in jungle">
+  <img src="img/img_mountains.jpg" alt="mountains">
+  <img src="img/img_man_narrow.jpg" alt="man with camera">
+  <img src="img/img_5terre.jpg" alt="Cinque Terre">
+</div>
+
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 5/2;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 65%;
+  aspect-ratio: 5/2;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 50%;
+  aspect-ratio: 9/2;
+}
+
+.blue, .green {
+  display: block;
+  margin: 5px;
+  scroll-snap-align: start none;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-snap-align property, vertical scroll.</h3>
+<p>Use scroll wheel or drag the scrollbar vertically inside the container box, let go, and see the scroll-snap-align start effect.</p>
+<p>Click on a box, then navigate through the blue and green boxes with the up and down arrow keys.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+===================================================================================================================
+
+
+** scroll-snap-stop
+
+scroll-snap-stop: normal|always|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 90%;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+}
+
+.pink {
+  background-color: lightpink;
+  width: 70%;
+}
+
+#container > div{
+  margin: 5px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  aspect-ratio: 4/1;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-snap-stop property.</h3>
+<p>To see the effect from scroll-snap-stop property, basic scroll snap behaviour must first be established: Scroll-snap-align property is set on child elements to snap on center position, and scroll-snap-type property is set on container to snap vertically.</p>
+<p>Now, with scroll-snap-stop property set to always on child elements, scrolling past the next element is prevented when swiping fast with a trackpad or a touch screen.</p>
+<p>You need to use a trackpad or a touch screen to see this effect.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+</div>
+
+</body>
+</html>
+
+===================================================================================================================
+
+
+** scroll-snap-type:
+
+scroll-snap-type: none|x|y|block|inline|both|mandatory|proximity|initial|inherit;
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.blue {
+  background-color: lightblue;
+  height: 95%;
+  aspect-ratio: 1/2;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 50%;
+  aspect-ratio: 2/1;
+}
+
+.blue, .green {
+  display: inline-block;
+  margin: 5px;
+  scroll-snap-align: center;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-snap-type property.</h3>
+<p>Scroll-snap-type property is set on container element to work on x-axis.</p>
+<p>Drag the scrollbar horizontally inside the container box, let go, and see the scroll-snap-align center effect.</p>
+<p>Click on a box, then navigate through the blue and green boxes with the left and right arrow keys.</p>
+
+<div id="container">
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  scroll-snap-type: both mandatory;
+  width: 50%;
+  margin: 30px auto;
+  white-space: nowrap;
+  aspect-ratio: 1/1;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  border: solid black 2px;
+}
+
+.green    { background-color: lightgreen; }
+.pink     { background-color: lightpink; }
+.blue     { background-color: lightblue; }
+.yellow   { background-color: yellow; }
+.grey     { background-color: lightgray; }
+
+#container > div {
+  display: inline-block;
+  height: 80%;
+  border-radius: 10%;
+  aspect-ratio: 1/1;
+  margin: 5px;
+  scroll-snap-align: center;
+}
+</style>
+</head>
+<body>
+
+<h3>CSS scroll-snap-type property, in both x- and y-direction.</h3>
+<p>Use scroll wheel or drag the scrollbar inside the container box, let go, and see how the scroll-snap-type is in both directions.</p>
+<p>Try also to click on a box, then navigate through the boxes with the arrow keys.</p>
+
+<div id="container">
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="pink"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <div class="grey"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <br>
+  <div class="grey"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <br>
+  <div class="green"></div>
+  <div class="pink"></div>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="pink"></div>
+  <div class="grey"></div>
+</div>
+
+</body>
+</html>

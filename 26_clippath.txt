@@ -1,0 +1,225 @@
+********************
+
+CHAPTER: 26
+
+********************
+
+
+** clip-path
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  position: relative;
+}
+#blueDIV {
+  position:absolute;
+  top: 50%;
+  width:100px;
+  background:lightblue;
+  padding:10px;
+  clip-path: circle(50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The clip Property</h1>
+
+<div id="myDIV">
+    <div id="blueDIV">See how different clip-path values will affect this DIV element.</div>
+</div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  position: relative;
+}
+#blueDIV {
+  position:absolute;
+  top: 50%;
+  width:100px;
+  background:lightblue;
+  padding:10px;
+  clip-path: circle(40%);
+}
+</style>
+</head>
+<body>
+
+<h1>The clip Property</h1>
+
+<div id="myDIV">
+    <div id="blueDIV">See how different clip-path values will affect this DIV element.</div>
+</div>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  position: relative;
+}
+#blueDIV {
+  position:absolute;
+  top: 50%;
+  width:100px;
+  background:lightblue;
+  padding:10px;
+  clip-path: ellipse(25% 40% at 50% 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The clip Property</h1>
+
+<div id="myDIV">
+    <div id="blueDIV">See how different clip-path values will affect this DIV element.</div>
+</div>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  position: relative;
+}
+#blueDIV {
+  position:absolute;
+  top: 50%;
+  width:100px;
+  background:lightblue;
+  padding:10px;
+  clip-path: ellipse(25% 25% at 50% 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The clip Property</h1>
+
+<div id="myDIV">
+    <div id="blueDIV">See how different clip-path values will affect this DIV element.</div>
+</div>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  position: relative;
+}
+#blueDIV {
+  position:absolute;
+  top: 50%;
+  width:100px;
+  background:lightblue;
+  padding:10px;
+  clip-path:  polygon(50% 0%, 0% 100%, 100% 100%);
+}
+</style>
+</head>
+<body>
+
+<h1>The clip Property</h1>
+
+<div id="myDIV">
+    <div id="blueDIV">See how different clip-path values will affect this DIV element.</div>
+</div>
+
+</body>
+</html>
+
+
+Example 6:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+  position: relative;
+}
+#blueDIV {
+  position:absolute;
+  top: 50%;
+  width:100px;
+  background:lightblue;
+  padding:10px;
+  clip-path:  polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The clip Property</h1>
+
+<div id="myDIV">
+    <div id="blueDIV">See how different clip-path values will affect this DIV element.</div>
+</div>
+
+</body>
+</html>
+
+
+

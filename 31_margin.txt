@@ -1,0 +1,283 @@
+********************
+
+CHAPTER: 31
+
+********************
+
+** margin-block
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightblue;
+}
+
+div.ex1 {
+  border: solid black 1px;
+  margin-block: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-block Property</h1>
+
+<div>A div element with no specified margins.</div>
+<div>A div element with no specified margins.</div>
+<div class="ex1">This div element has a margin of 35 pixels on both sides in block direction.</div>
+<div>A div element with no specified margins.</div>
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+
+margin-block: auto|value|initial|inherit;
+
+margin-block: 0;
+margin-block: 10px;
+margin-block: -15px;
+margin-block: 50px;
+margin-block: auto;
+margin-block: 5%;
+margin-block: 10px 50px;
+
+===========================================================================================================
+
+** margin-block-end
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightblue;
+}
+
+div.ex1 {
+  border: solid black 1px;
+  margin-block-end: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-block-end Property</h1>
+
+<div>A div element with no specified margins.</div>
+<div>A div element with no specified margins.</div>
+<div class="ex1">This div element has a margin of 35 pixels at the end in block direction.</div>
+<div>A div element with no specified margins.</div>
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+margin-block-end: auto|value|initial|inherit;
+
+===========================================================================================================
+
+** margin-block-start
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightblue;
+}
+
+div.ex1 {
+  border: solid black 1px;
+  margin-block-start: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-block-start Property</h1>
+
+<div>A div element with no specified margins.</div>
+<div>A div element with no specified margins.</div>
+<div class="ex1">This div element has a margin of 35 pixels at the start in block direction.</div>
+<div>A div element with no specified margins.</div>
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+
+===========================================================================================================
+
+** margin-inline
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: rgb(239, 135, 88);
+  width: 25%;
+  height: 200px;
+  float: left;
+}
+
+#ex1 {
+  background-color: lightblue;
+  border: solid black 1px;
+  margin-inline: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-inline Property</h1>
+
+<div>A div element with no specified margins.</div>
+
+<div id="ex1">This div element has a margin of 35 pixels on both sides in the inline direction.</div>
+
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+margin-inline: auto|value|initial|inherit;
+
+===========================================================================================================
+
+** margin-inline-end
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: rgb(239, 135, 88);
+  width: 25%;
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+}
+
+#ex1 {
+  background-color: lightblue;
+  border: solid black 1px;
+  margin-inline-end: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-inline-end Property</h1>
+
+<div>A div element with no specified margins.</div>
+
+<div id="ex1">This div element has a margin of 35 pixels at the end in the inline direction.</div>
+
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: rgb(239, 135, 88);
+  width: 25%;
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+}
+
+#ex1 {
+  background-color: lightblue;
+  border: solid black 1px;
+  margin-inline-end: 50px;
+  direction: rtl;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-inline-end Property</h1>
+<p>Here, the margin-inline-end property is affected by the CSS direction property.</p>
+
+<div>A div element with no specified margins.</div>
+
+<div id="ex1">This DIV element has a margin of 50 pixels from the end of DIV elementin the inline direction.</div>
+
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+
+margin-inline-end: auto|value|initial|inherit;
+
+
+===========================================================================================================
+
+
+** margin-inline-start
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: rgb(239, 135, 88);
+  width: 25%;
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+}
+
+#ex1 {
+  background-color: lightblue;
+  border: solid black 1px;
+  margin-inline-start: 35px;
+}
+</style>
+</head>
+<body>
+
+<h1>The margin-inline-start Property</h1>
+
+<div>A div element with no specified margins.</div>
+
+<div id="ex1">This div element has a margin of 35 pixels at the start in the inline direction.</div>
+
+<div>A div element with no specified margins.</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

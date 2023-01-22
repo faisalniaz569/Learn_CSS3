@@ -1,0 +1,242 @@
+********************
+
+CHAPTER: 18
+
+********************
+
+
+** box-shadow
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+#example3 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px red;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+<p>The box-shadow property defines the shadow of an element:</p>
+
+<h2>box-shadow: 5px 10px:</h2>
+<div id="example1">
+  <p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
+</div>
+
+<h2>box-shadow: 5px 10px #888888:</h2>
+<div id="example2">
+  <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
+</div>
+
+<h2>box-shadow: 5px 10px red:</h2>
+<div id="example3">
+  <p>A red shadow.</p>
+</div>
+
+</body>
+</html>
+
+
+Example 2: (blur effect)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 20px 20px 10px grey;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+<p>The box-shadow property defines the shadow of an element:</p>
+
+
+<h2>box-shadow: 20px 20px 10px grey:</h2>
+<div id="example2">
+  <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
+</div>
+
+
+</body>
+</html>
+
+
+Example 3: (spread effect)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow:20px 20px 50px 15px grey;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+<p>The box-shadow property defines the shadow of an element:</p>
+
+
+<h2>box-shadow: 20px 20px 10px grey:</h2>
+<div id="example2">
+  <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
+</div>
+
+
+</body>
+</html>
+
+
+Example 4: (color effect)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 20px 20px 20px 10px red;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+<p>The box-shadow property defines the shadow of an element:</p>
+
+
+<h2>box-shadow: 20px 20px 10px grey:</h2>
+<div id="example2">
+  <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
+</div>
+
+
+</body>
+</html>
+
+
+Example 5: (inset)
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 20px 20px 50px 10px pink inset;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+<p>The box-shadow property defines the shadow of an element:</p>
+
+
+<h2>box-shadow: 20px 20px 10px grey:</h2>
+<div id="example2">
+  <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
+</div>
+
+
+</body>
+</html>
+
+
+Example 6:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+  margin: 30px;
+  background-color: #E9E9E9;
+}
+
+div.polaroid {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div.rotate_right {
+  float: left;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;
+  -ms-transform: rotate(-8deg); /* IE 9 */
+  -webkit-transform: rotate(-8deg); /* Safari */
+  transform: rotate(-8deg);
+}
+</style>
+</head>
+<body>
+
+<div class="polaroid rotate_right">
+  <img src="img/pulpitrock.jpg" alt="Pulpit rock" width="285" height="215">
+  <p class="caption">The pulpit rock in Lysefjorden, Norway.</p>
+</div>
+
+<div class="polaroid rotate_left">
+  <img src="img/cinqueterre.jpg" alt="Monterosso al Mare" width="285" height="215">
+  <p class="caption">Monterosso al Mare. One of the five villages in Cinque Terre, Italy.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

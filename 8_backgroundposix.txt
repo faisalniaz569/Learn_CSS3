@@ -1,0 +1,122 @@
+********************
+
+CHAPTER: 8
+
+********************
+
+
+## background-position-x
+------------------------
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { 
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: solid black 1px;
+  background-image: url('img/w3css.gif');
+  background-repeat: no-repeat;
+  background-position-x: center; 
+}
+</style>
+</head>
+<body>
+
+<h1>The background-position-x Property</h1>
+<p>Here, the background image will be positioned in the center of the element on x-axis (in this case, the div element).</p>
+<div></div>
+
+</body>
+</html>
+
+Example 2:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { 
+  background-image: url('img/w3css.gif');
+  background-repeat: no-repeat;
+  background-position-x: right; 
+}
+</style>
+</head>
+<body>
+
+<h1>The background-position-x Property</h1>
+<p>Here, the background image will be positioned right.</p>
+
+</body>
+</html>
+
+
+Example 3:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { 
+  background-image: url('img/w3css.gif');
+  background-repeat: no-repeat;
+  background-position-x: left; 
+}
+</style>
+</head>
+<body>
+
+<h1>The background-position-x Property</h1>
+<p>Here, the background image will be positioned left.</p>
+
+</body>
+</html>
+
+
+Example 4:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { 
+  background-image: url('img/w3css.gif');
+  background-repeat: no-repeat;
+  background-position-x: 50%; 
+}
+</style>
+</head>
+<body>
+
+<h1>The background-position-x Property</h1>
+<p>Here, the background image will be positioned 50% from left side.</p>
+
+</body>
+</html>
+
+
+Example 5:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { 
+  background-image: url('img/w3css.gif');
+  background-repeat: no-repeat;
+  background-position-x: 150px; 
+}
+</style>
+</head>
+<body>
+
+<h1>The background-position-x Property</h1>
+<p>Here, the background image will be positioned 150px from left side.</p>
+
+</body>
+</html>
